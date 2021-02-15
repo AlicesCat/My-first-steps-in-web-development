@@ -3,29 +3,25 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(
-    white 35%,
-    salmon 52%,
-    rgb(255, 187, 161) 70%,
-    lightgray 85%
-  );
+  background-color: #d7e9f0;
+  color: darkslategray;
 }
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: darkslategrey;
 }
 
 a:hover {
-  color: lightsalmon;
+  color: salmon;
 }
 
 a:active {
-  color: whitesmoke;
+  color: darkslategrey;
 }
 
 nav {
-  width: 100%;
+  width: 90%;
   height: 75px;
 
   display: flex;
@@ -34,8 +30,7 @@ nav {
 
 .logo {
   height: 50px;
-  border-radius: 50%;
-  margin: 15px 0 0 20px;
+  margin: 15px 0 0 0;
 }
 
 .nav-bar {
@@ -49,22 +44,13 @@ nav {
 }
 
 .nav-links {
-  color: darkslategrey;
   margin: 15px 15px;
-}
-
-.nav-links:active {
-  color: darkslategrey;
 }
 
 .hero {
   width: 90%;
   height: auto;
-  background-color: rgb(215, 233, 240);
   margin: 10px 0 15px 0;
-  border: solid salmon 2px;
-  border-radius: 30px;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -75,17 +61,17 @@ nav {
   max-width: 300px;
 }
 
-#name {
-  color: darkslategray;
-  text-align: center;
+h1 {
+  color: salmon;
   font-family: "Potta One", cursive;
   font-size: 25px;
+  text-align: center;
 }
 
 .styled-break {
   width: 30px;
   height: 5px;
-  background-color: lightsalmon;
+  background-color: skyblue;
   border-radius: 2.5px;
   margin: 30px 0;
 }
@@ -104,11 +90,11 @@ nav {
 
 .button:hover {
   background-color: lightsalmon;
-  color: whitesmoke;
+  /*color: whitesmoke;*/
 }
 
 .button:active {
-  box-shadow: inset -2px -2px 5px salmon;
+  box-shadow: inset -2px -2px 5px salmon, inset 1px 1px 5px salmon;
 }
 
 .hero-image {
@@ -119,44 +105,47 @@ nav {
 
 section {
   width: 100%;
-  height: 300px;
-  /* background-color: rgb(255, 174, 164); */
-  background-image: linear-gradient(
-    180deg,
-    salmon,
-    rgb(255, 187, 161),
-    lightgray
-  );
-
+  padding: 40px 0 0 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
+}
+
+.about-me {
+  width: 300px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {
+  max-width: 300px;
+  margin: 30px;
 }
 
 .avatar {
   width: 200px;
   border-radius: 20px;
-  margin-left: 10px;
+  margin: 30px;
 }
 
 .test {
   width: 30px;
   height: 30px;
-  background-color: whitesmoke;
+  background-color: silver;
   margin: 10px;
 }
 
 #main {
-  box-shadow: 10px 20px 5px grey;
+  box-shadow: 5px 5px 5px grey;
 }
 
 footer {
   width: 100%;
   height: 100%;
-  background-color: darkslategray;
-  color: whitesmoke;
   list-style-type: circle;
   line-height: 180%;
 }
