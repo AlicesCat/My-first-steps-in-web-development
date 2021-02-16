@@ -103,6 +103,18 @@ h1 {
   border-radius: 40px;
 }
 
+@media only screen and (max-width: 832px) {
+  .hero-info {
+    max-width: 832px;
+  }
+
+  .hero-image {
+    visibility: hidden;
+    height: 0px;
+    margin: 0;
+  }
+}
+
 section {
   width: 100%;
   padding: 40px 0 0 0;
@@ -132,15 +144,14 @@ section {
   margin: 30px;
 }
 
-.test {
+.fas {
   width: 30px;
   height: 30px;
-  background-color: silver;
   margin: 10px;
 }
 
-#main {
-  box-shadow: 5px 5px 5px grey;
+.fas:hover {
+  color: salmon;
 }
 
 .submission-cats {
