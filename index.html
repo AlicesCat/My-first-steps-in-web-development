@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap"
@@ -15,13 +15,16 @@
   <body>
     <nav>
       <img alt="logo" src="images/logo-x3.png" class="logo" />
-      <ul class="nav-bar">
+      <ul class="nav-bar" id="nav-list">
         <li class="nav-links"><a href="#about-me">About me</a></li>
         <li class="nav-links"><a href="pages/contact.html">Contact me</a></li>
         <li class="nav-links">
           <a href="https://github.com/AlicesCat">GitHub</a>
         </li>
       </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
     </nav>
 
     <div class="hero">
@@ -155,5 +158,7 @@
         <li><a href="https://github.com/AlicesCat">GitHub</a></li>
       </ul>
     </footer>
+
+    <script src="src/index.js"></script>
   </body>
 </html>

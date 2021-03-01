@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #d7e9f0;
   color: darkslategray;
 }
@@ -23,7 +23,6 @@ a:active {
 nav {
   width: 90%;
   height: 85px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -34,11 +33,37 @@ nav {
 }
 
 .nav-bar {
-  list-style-type: none;
-  font-size: 20px;
+  display: none;
+}
 
+.nav-bar.show {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.hamburger {
+  border: 0;
+  background-color: #d7e9f0;
+  margin-top: 25px;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 702px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bar {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .nav-links {
@@ -62,7 +87,7 @@ nav {
 
 h1 {
   color: salmon;
-  font-family: "Potta One", cursive;
+  font-family: 'Potta One', cursive;
   font-size: 25px;
   text-align: center;
 }
