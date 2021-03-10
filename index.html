@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/eff74c6791.js" crossorigin="anonymous"></script>
     <title>Enthony's place</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
     <nav>
-      <img alt="logo" src="images/logo.bmp" class="logo" />
-      <ul class="nav-bar">
-        <li><a href="#about-me" class="nav-links">About me</a></li>
-        <li><a href="pages/contact.html" class="nav-links">Contact me</a></li>
-        <li>
-          <a href="https://github.com/AlicesCat" class="nav-links">GitHub</a>
+      <img alt="logo" src="images/logo-x3.png" class="logo" />
+      <ul class="nav-bar" id="nav-list">
+        <li class="nav-links"><a href="#about-me">About me</a></li>
+        <li class="nav-links"><a href="pages/contact.html">Contact me</a></li>
+        <li class="nav-links">
+          <a href="https://github.com/AlicesCat">GitHub</a>
         </li>
       </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
     </nav>
 
     <div class="hero">
@@ -32,7 +36,6 @@
           create web pages)))
         </p>
         <div class="styled-break"></div>
-        <!--<button>Click me</button>-->
         <div class="button">Click me</div>
       </div>
       <div>
@@ -45,17 +48,107 @@
     </div>
 
     <section>
-      <h2><a name="about-me">About me</a></h2>
-      <img
-        class="avatar"
-        src="images/Super_cute_me.JPG"
-        alt="Me as cute little sleeping regdoll cat"
-      />
-      <div class="test"></div>
-      <div class="test"></div>
-      <div class="test" id="main"></div>
-      <div class="test"></div>
-      <div class="test"></div>
+      <div class="about-me">
+        <img
+          class="avatar"
+          src="images/Super_cute_me.JPG"
+          alt="Me as cute little sleeping regdoll cat"
+        />
+      </div>
+      <div class="info">
+        <h2><a name="about-me">About me</a></h2>
+        <p>
+          Hello! I'am fluffy seal-point regdoll cat. I love sleeping and watch
+          out of windows. People think I'am adorable!
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <i class="fas fa-cat fa-lg"></i>
+      <i class="fas fa-quidditch fa-lg"></i>
+      <i class="fas fa-paw fa-lg"></i>
+      <i class="fas fa-dragon fa-lg"></i>
+      <i class="fas fa-cloud-moon fa-lg"></i>
+    </section>
+
+    <section>
+      <form>
+        <h2>Contact me if you are a cat owner</h2>
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="John"></input>
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Doe"></input>
+        
+        <p>How many cats do you have?</p>
+        <input type="radio" id="one" name="num-cats" value="one" checked></input>
+        <label for="one">One</label>
+        <input type="radio" id="two" name="num-cats" value="two"></input>
+        <label for="two">Two</label>
+        <input type="radio" id="three-or-more" name="num-cats" value="three-or-more"></input>
+        <label for="three-or-more">Three or more)))</label>
+
+        <p>What toys do your cats prefer?</p>
+        <input type="checkbox" id="feather" name="toys" value="feather"></input>
+        <label for="feather">Feather wand</label>
+        <input type="checkbox" id="ball" name="toys" value="ball"></input>
+        <label for="ball">Ball</label>
+        <input type="checkbox" id="laser" name="toys" value="laser"></input>
+        <label for="laser">Laser toy</label>
+
+        <input type="submit" value="submit" class="button" id="submit"></input>
+      </form>
+    </section>
+
+    <section>
+      <form class="submission-cats">
+        <h2>Contact me if you are a cat</h2>
+        <p>
+          <label for="your-name">
+            <span>Your name: </span>
+            <input type="text" placeholder="Candy" />
+          </label>
+        </p>
+
+        <fieldset>
+          <legend>Your age:</legend>
+          <ul>
+            <li>
+              <label for="kitten">
+                <input type="radio" id="kitten" name="age" value="kitten" />Kitten
+              </label>
+            </li>
+            <li>
+              <label for="adult">
+                <input type="radio" id="adult" name="age" value="adult" />Adult
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your personality traits:</legend>
+          <ul>
+            <li>
+              <label for="clever">
+                <input type="checkbox" id="clever" name="traits" value="clever" />Clever
+              </label>
+            </li>
+            <li>
+              <label for="fluffy">
+                <input type="checkbox" id="fluffy" name="traits" value="fluffy" />Fluffy
+              </label>
+            </li>
+            <li>
+              <label for="lazy">
+                <input type="checkbox" id="lazy" name="traits" value="lazy" />Lazy
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit" class="button" id="submit">Submit</button>
+      </form>
     </section>
 
     <footer>
@@ -65,5 +158,7 @@
         <li><a href="https://github.com/AlicesCat">GitHub</a></li>
       </ul>
     </footer>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
